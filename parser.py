@@ -6,7 +6,6 @@ def get_filename():
         return filename
     else:
         print("papryka")
-        return papryka
 def main():
     filename = get_filename()
     if len(filename) == 0:
@@ -16,3 +15,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def read_from_file_to_list(filename):
+    with open("input.txt","r") as file_to_read:
+        print(file_to_read.readlines())
