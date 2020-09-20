@@ -18,4 +18,6 @@ if __name__ == "__main__":
 
 def read_from_file_to_list(filename):
     with open("input.txt","r") as file_to_read:
-        print(file_to_read.readlines())
+        for line in file_to_read.readlines():
+            row = line.replace("\n","").split(" ")
+            print(row)
